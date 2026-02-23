@@ -4,17 +4,16 @@ class Solution {
         int curr=1;
         for(int i=0;i<n;i++){
             ans.add(curr);
-        
-        if(curr*10<=n){
-            curr=curr*10;
-        }
-        else{
-            while(curr%10==9  || curr+1>n){
-                curr=curr/10;
+            if(curr*10<=n){
+                curr=curr*10;
             }
-            curr++;
+            else{
+                while(curr%10==9 || curr+1>n){
+                    curr=curr/10;
+                }
+                curr++;
+            }
         }
-    }
-    return ans;
+        return ans;
     }
 }
