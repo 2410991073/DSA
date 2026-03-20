@@ -4,17 +4,16 @@ class Solution {
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(!st.isEmpty() && ch==st.peek()){
-            st.pop();
+                st.pop();
             }
             else{
                 st.push(ch);
             }
         }
-            StringBuilder sb=new StringBuilder();
-            while(!st.isEmpty()){
-                sb.append(st.pop());
-            }
-            return sb.reverse().toString();
-        
+        StringBuilder sb=new StringBuilder();
+        while(!st.isEmpty()){
+            sb.append(st.pop());
+        }
+        return sb.reverse().toString();
     }
 }
