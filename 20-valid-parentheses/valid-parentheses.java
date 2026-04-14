@@ -11,11 +11,11 @@ class Solution {
                     return false;
                 }
                 char top=st.pop();
-                if((ch==')' && top!='(')||(ch=='}' && top!='{') ||(ch==']' && top!='[')){
+                if((ch==')' && top!='(')||(ch=='}' && top!='{')||(ch==']' && top!='[')){
                     return false;
                 }
             }
-        } 
+        }
         return st.isEmpty();
     }
 }
