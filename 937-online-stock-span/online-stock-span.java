@@ -12,6 +12,7 @@ class StockSpanner {
         }
         st.push(new int[]{price,span});
         return span;
+        
     }
 }
 
