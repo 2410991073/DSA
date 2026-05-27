@@ -14,6 +14,7 @@ class Solution {
                 st.push(b);
                 st.push(a);
                 st.push(a+b);
+                
             }
             else{
                 st.push(Integer.parseInt(op));
@@ -24,6 +25,5 @@ class Solution {
             sum+=x;
         }
         return sum;
-        
     }
 }
