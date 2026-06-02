@@ -9,7 +9,7 @@ class Solution {
         //         st.pop();
         //     }
         //     if(i<n){
-        //         nge[i]=st.isEmpty()?-1:st.peek();
+        //         nge[i]=st.isEmpty() ?-1:st.peek();
         //     }
         //     st.push(num);
         // }
@@ -28,5 +28,6 @@ class Solution {
             st.push(num);
         }
         return nge;
+
     }
 }
