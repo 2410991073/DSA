@@ -12,13 +12,10 @@ class Solution {
                 while(set.contains(x+1)){
                     x++;
                     count++;
-
                 }
                 longest=Math.max(longest,count);
             }
         }
         return longest;
-
-
     }
 }
