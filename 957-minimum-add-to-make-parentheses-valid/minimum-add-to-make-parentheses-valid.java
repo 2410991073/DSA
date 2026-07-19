@@ -5,7 +5,7 @@ class Solution {
             if(ch=='('){
                 open++;
             }
-            else {
+            else{
                 if(open>0){
                     open--;
                 }
@@ -14,6 +14,6 @@ class Solution {
                 }
             }
         }
-        return close+open;
+        return open+close;
     }
 }
