@@ -32,7 +32,6 @@ class Solution {
         //     ans.add(level);
         // }
         // return ans;
-        
         List<List<Integer>>ans=new ArrayList<>();
         Queue<TreeNode>q=new LinkedList<>();
         if(root==null) return ans;
