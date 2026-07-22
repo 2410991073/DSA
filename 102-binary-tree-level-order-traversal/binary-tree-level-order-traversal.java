@@ -40,13 +40,17 @@ class Solution {
             int size=q.size();
             List<Integer>level=new ArrayList<>();
             for(int i=0;i<size;i++){
-                TreeNode temp=q.peek();
-                q.remove();
-                level.add(temp.val);
-                if(temp.left!=null) q.add(temp.left);
-                if(temp.right!=null) q.add(temp.right);
-            }
-            ans.add(level);
+
+            
+            TreeNode temp=q.peek();
+            q.remove();
+            level.add(temp.val);
+            if(temp.left!=null) q.add(temp.left);
+            if(temp.right!=null) q.add(temp.right);
+
+        }
+
+        ans.add(level);
         }
         return ans;
 
