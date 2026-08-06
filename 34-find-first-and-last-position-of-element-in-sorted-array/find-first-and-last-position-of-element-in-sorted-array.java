@@ -3,9 +3,8 @@ class Solution {
         int first=leftside(nums,target);
         int last=rightside(nums,target);
         return new int[]{first,last};
-
     }
-    private static int leftside(int[]nums,int target){
+    private int leftside(int []nums,int target){
         int low=0;
         int high=nums.length-1;
         int ans=-1;
@@ -16,17 +15,15 @@ class Solution {
                 high=mid-1;
             }
             else if(nums[mid]<target){
-               
                 low=mid+1;
             }
             else{
                 high=mid-1;
             }
-
         }
         return ans;
     }
-    private static int rightside(int[]nums,int target){
+    private int rightside(int[]nums,int target){
         int low=0;
         int high=nums.length-1;
         int ans=-1;
@@ -37,12 +34,11 @@ class Solution {
                 low=mid+1;
             }
             else if(nums[mid]<target){
-              low=mid+1;
+                low=mid+1;
             }
             else{
                 high=mid-1;
             }
-
         }
         return ans;
     }
