@@ -1,9 +1,9 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         int low=0;
-        int high=nums.length-1;
+        int high=nums.length-2;
         int ans=Integer.MAX_VALUE;
-        while(low<high){
+        while(low<=high){
             int mid=low+(high-low)/2;
             if(mid%2==1){
                 mid--;
@@ -12,7 +12,7 @@ class Solution {
                 low=mid+2;
             }
             else{
-                high=mid;
+                high=mid-1;
             }
         }
         return nums[low];
