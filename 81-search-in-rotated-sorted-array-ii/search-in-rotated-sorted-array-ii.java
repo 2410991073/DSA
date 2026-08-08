@@ -4,10 +4,8 @@ class Solution {
         int high=nums.length-1;
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(nums[mid]==target){
-                return true;
-            }
-             if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
+            if(nums[mid]==target) return true;
+            if(nums[mid]==nums[low] && nums[mid]==nums[high]){
                 low++;
                 high--;
                 continue;
@@ -15,8 +13,7 @@ class Solution {
             if(nums[low]<=nums[mid]){
                 if(target>=nums[low] && target<nums[mid]){
                     high=mid-1;
-                }
-                else{
+                }else{
                     low=mid+1;
                 }
             }
