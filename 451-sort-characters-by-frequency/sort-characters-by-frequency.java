@@ -8,7 +8,7 @@ class Solution {
        for(char ch:map.keySet()){
         list.add(ch);
        }
-       Collections.sort(list,(a,b) -> map.get(b)-map.get(a));
+       Collections.sort(list,(a,b)->map.get(b)-map.get(a));
        StringBuilder sb=new StringBuilder();
        for(char ch:list){
         int freq=map.get(ch);
