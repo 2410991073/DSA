@@ -31,7 +31,6 @@ class BSTIterator {
         }
         return curr.val;
     }
-    
     public boolean hasNext() {
         return !st.isEmpty();
     }
