@@ -26,6 +26,7 @@ class Solution {
             this.max=max;
             this.sum=sum;
         }
+
     }
     public int maxSumBST(TreeNode root) {
         dfs(root);
@@ -33,11 +34,11 @@ class Solution {
     }
     private Info dfs(TreeNode root){
         if(root==null){
-            return new Info(true,Integer.MAX_VALUE,Integer.MIN_VALUE,0);
+            return new Info (true,Integer.MAX_VALUE,Integer.MIN_VALUE,0);
         }
         Info left=dfs(root.left);
         Info right=dfs(root.right);
-        if(left.isBST && right.isBST && left.max < root.val && root.val <right.min){
+        if(left.isBST && right.isBST && left.max<root.val && root.val<right.min){
             int sum=left.sum+right.sum+root.val;
             ans=Math.max(ans,sum);
             int min=Math.min(root.val,left.min);
