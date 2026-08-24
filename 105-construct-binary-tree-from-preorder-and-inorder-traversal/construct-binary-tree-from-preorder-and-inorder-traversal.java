@@ -19,6 +19,14 @@ class Solution {
         return build(preorder,inorder,0,inorder.length-1);
     }
     TreeNode build(int[]pre,int[]in,int start,int end){
+        // if(start>end) return null;
+        // TreeNode root=new TreeNode(pre[index++]);
+        // int i=start;
+        // while(in[i]!=root.val)
+        // i++;
+        // root.left=build(pre,in,start,i-1);
+        // root.right=build(pre,in,i+1,end);
+        // return root;
         if(start>end) return null;
         TreeNode root=new TreeNode(pre[index++]);
         int i=start;
