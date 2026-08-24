@@ -15,7 +15,6 @@
  */
 class Solution {
     int index=0;
-
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return build(preorder,inorder,0,inorder.length-1);
     }
