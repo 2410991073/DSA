@@ -5,6 +5,13 @@ class StockSpanner {
     }
     
     public int next(int price) {
+        // int span=1;
+        // while(!st.isEmpty() && st.peek()[0]<=price){
+        //     span+=st.peek()[1];
+        //     st.pop();
+        // }
+        // st.push(new int[]{price,span});
+        // return span;
         int span=1;
         while(!st.isEmpty() && st.peek()[0]<=price){
             span+=st.peek()[1];
@@ -12,7 +19,8 @@ class StockSpanner {
         }
         st.push(new int[]{price,span});
         return span;
-        
+    
+
     }
 }
 
