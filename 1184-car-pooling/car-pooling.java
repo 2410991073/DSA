@@ -1,6 +1,6 @@
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
-        int stop[]=new int[1001];
+        int []stop=new int[1001];
         for(int[]trip:trips){
             int passenger=trip[0];
             int from=trip[1];
@@ -14,6 +14,7 @@ class Solution {
             if(current>capacity){
                 return false;
             }
-        }return true;
+        }
+        return true;
     }
 }
