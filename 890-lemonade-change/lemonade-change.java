@@ -4,11 +4,11 @@ class Solution {
         for(int bill:bills){
             if(bill==5) five++;
             else if(bill==10){
-            if(five==0){
-                return false;
-            }
-            five--;
-            ten++;
+                if(five==0){
+                    return false;
+                }
+                five--;
+                ten++;
             }
             else{
                 if(ten>0 && five>0){
@@ -22,7 +22,6 @@ class Solution {
                     return false;
                 }
             }
-            
         }
         return true;
     }
