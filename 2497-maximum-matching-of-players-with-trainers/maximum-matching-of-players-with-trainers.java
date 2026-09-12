@@ -1,22 +1,14 @@
-import java.util.Arrays;
-
 class Solution {
     public int matchPlayersAndTrainers(int[] players, int[] trainers) {
-
         Arrays.sort(players);
         Arrays.sort(trainers);
-
-        int player = 0;
-        int trainer = 0;
-
-        while (player < players.length && trainer < trainers.length) {
-
-            if (players[player] <= trainers[trainer]) {
+        int player=0,trainer=0;
+        while(player<players.length && trainer<trainers.length){
+            if(trainers[trainer]>=players[player]){
                 player++;
             }
             trainer++;
         }
-
         return player;
     }
 }
