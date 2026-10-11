@@ -2,10 +2,11 @@ class Solution {
     public void sortColors(int[] nums) 
     {
         int n=nums.length;
-        int low=0,high=nums.length-1,mid=0;
+        int mid=0;
+        int low=0,high=n-1;
         while(mid<=high){
             if(nums[mid]==0){
-                swap(nums,mid,low);
+                swap(nums,low,mid);
                 low++;
                 mid++;
             }
@@ -14,9 +15,9 @@ class Solution {
             }
             else{
                 swap(nums,mid,high);
-                    high--;
-                }
+                high--;
             }
+        }
     }
     private void swap(int[]nums,int i,int j){
         int temp=nums[i];
