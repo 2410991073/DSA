@@ -5,7 +5,7 @@ class Solution {
         // int maxarea=0;
         // for(int i=0;i<=n;i++){
         //     int currheight=(i==n)?0:heights[i];
-        //     while(!st.isEmpty()&& heights[st.peek()]>currheight){
+        //     while(!st.isEmpty() && heights[st.peek()]>currheight){
         //         int height=heights[st.pop()];
         //         int right=i;
         //         int left=st.isEmpty()?-1:st.peek();
