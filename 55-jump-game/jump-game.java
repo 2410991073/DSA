@@ -4,8 +4,9 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             if(i>maxreach){
                 return false;
-            }
-            maxreach=Math.max(maxreach,i+nums[i]);
+            
+        }
+        maxreach=Math.max(maxreach,i+nums[i]);
         }
         return true;
     }
