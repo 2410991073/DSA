@@ -4,7 +4,7 @@ class Solution {
         int last=rightside(nums,target);
         return new int[]{first,last};
     }
-    private int leftside(int []nums,int target){
+    private int leftside(int[]nums,int target){
         int low=0;
         int high=nums.length-1;
         int ans=-1;
