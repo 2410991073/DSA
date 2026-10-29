@@ -3,6 +3,7 @@ class Solution {
         int first=leftside(nums,target);
         int last=rightside(nums,target);
         return new int[]{first,last};
+
     }
     private int leftside(int[]nums,int target){
         int low=0;
@@ -20,6 +21,7 @@ class Solution {
             else{
                 high=mid-1;
             }
+
         }
         return ans;
     }
@@ -33,7 +35,7 @@ class Solution {
                 ans=mid;
                 low=mid+1;
             }
-            else if(nums[mid]<target){
+             else if(nums[mid]<target){
                 low=mid+1;
             }
             else{
@@ -42,5 +44,4 @@ class Solution {
         }
         return ans;
     }
-
 }
