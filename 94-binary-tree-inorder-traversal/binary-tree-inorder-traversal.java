@@ -20,9 +20,9 @@ class Solution {
         return ans;
     }
     private void inorder(TreeNode root,List<Integer>ans){
-        if(root==null) return ;
-        inorder(root.left,ans);
-        ans.add(root.val);
-        inorder(root.right,ans);
+      if(root==null) return ;
+      inorder(root.left,ans);
+      ans.add(root.val);
+      inorder(root.right,ans);
     }
 }
