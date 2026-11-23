@@ -35,5 +35,6 @@ class Solution {
         root.left=build(pre,in,start,i-1);
         root.right=build(pre,in,i+1,end);
         return root;
+        
     }
 }
