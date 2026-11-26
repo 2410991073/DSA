@@ -24,7 +24,7 @@ class Solution {
         // }
         // return root;
         if(root==null) return new TreeNode(val);
-        if(val<root.val) {
+        if(val<root.val){
             root.left=insertIntoBST(root.left,val);
         }
         else{
