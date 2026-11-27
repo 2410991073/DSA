@@ -23,14 +23,14 @@ class Solution {
             root.right=deleteNode(root.right,key);
         }
         else{
-            if(root.left==null) return root.right;
+            if(root.left==null)return root.right;
             if(root.right==null) return root.left;
-            TreeNode successor=root.right;
-            while(successor.left!=null){
-                successor=successor.left;
+            TreeNode curr=root.right;
+            while(curr.left!=null){
+                curr=curr.left;
             }
-            root.val=successor.val;
-            root.right=deleteNode(root.right,successor.val);
+            root.val=curr.val;
+            root.right=deleteNode(root.right,curr.val);
         }
         return root;
     }
